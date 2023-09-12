@@ -1,4 +1,4 @@
-from truecallerpy import search_phonenumber
+from truecallerjs import search_phonenumber
 
 def log_database(data):
     with open('file path','+a') as db:
@@ -8,8 +8,8 @@ while True:
     phonenumber = input('Enter Phone Number: ')
     phone_number = phonenumber
 
-    id = 'a1i0b--hqyFQbVNVSyVkDlzTFi7F3PiPky1yMaiuFqIDKYR0QYCYC3Kwq6x_QTQg'
-    response = (search_phonenumber (phone_number, "IN", id))
+    id = 'a1i0T--hsIIDIF2kug0866zEjMOXKBeJzQvNp4lDdGqLrdRt8OK5ncpo16xejdaQ'
+    response = (search_phonenumber (phone_number, "BD", id))
     data= response["data"][0]
     print('Name:',data['name'])
     log_database(f'Name: {data["name"]}\n')
